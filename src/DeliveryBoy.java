@@ -1,14 +1,28 @@
+import java.util.Arrays;
+
 public class DeliveryBoy {
 
-    final int MAX_Delivery = 3;
+    final int MAX_Delivery = 5;
     private static int a = 0;
+    protected int count = 0;
     newParceel[] shipingList = new newParceel[MAX_Delivery];
 
     public void add(newParceel parceel) {
        if (a < MAX_Delivery) {
-           shipingList[a] = parceel;
+           shipingList[a++] = parceel;
        } else {
            System.out.println("This all , list is full");
        }
+    }
+
+    @Override
+    public String toString() {
+        return "DeliveryBoy{" +
+                "shipingList=" + Arrays.toString(shipingList) +
+                '}';
+    }
+
+    public int getMAX_Delivery() {
+        return MAX_Delivery;
     }
 }
