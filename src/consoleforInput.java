@@ -25,6 +25,7 @@ public class consoleforInput {
         deliveryTime = scn.nextInt();
     }
 
+
     public Scanner getScn() {
         return scn;
     }

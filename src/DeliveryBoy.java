@@ -2,9 +2,8 @@ import java.util.Arrays;
 
 public class DeliveryBoy {
 
-    final int MAX_Delivery = 5;
+    final int MAX_Delivery = 1;
     private static int a = 0;
-    protected int count = 0;
     newParceel[] shipingList = new newParceel[MAX_Delivery];
 
     public void add(newParceel parceel) {
@@ -15,6 +14,8 @@ public class DeliveryBoy {
        }
     }
 
+
+
     @Override
     public String toString() {
         return "DeliveryBoy{" +
@@ -22,7 +23,4 @@ public class DeliveryBoy {
                 '}';
     }
 
-    public int getMAX_Delivery() {
-        return MAX_Delivery;
-    }
 }
